@@ -99,6 +99,12 @@ describe 'Sass'
       end
     end
     
+    describe '!key1 = !key2'
+      it 'should reference a previously-defined variable'
+        assert('variables.dependent')
+      end
+    end
+    
     describe 'key: val'
       it 'should define a variable'
         assert('variables.alternate')
