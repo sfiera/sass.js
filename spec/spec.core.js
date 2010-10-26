@@ -117,6 +117,10 @@ describe 'Sass'
       assert('mixin')
     end
     
+    it 'should create multiple appropriate mixins'
+      assert('mixin.multiple')
+    end
+    
     describe 'when the mixin does not exist'
       try { assert('mixin.undefined') }
       catch (e) {
